@@ -61,14 +61,19 @@ header {
     
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) 
+{
     .mitte a {
-        padding: 8px 12px;    /* Noch kleinerer Innenabstand für sehr kleine Bildschirme */
-        font-size: 0.9rem;
-    
+        padding: 6px 10px;    /* Noch kleinerer Innenabstand für sehr kleine Bildschirme */
+        font-size: 0.8rem;
+        gap: 3px;
+   
     }
     .mitte {
         gap: 5px;
+        padding: 8px 0;
+        font: 0.8rem;
+       
     }
 }
 
@@ -153,6 +158,8 @@ section {
     justify-content: center;
     align-items: center;
     object-fit: cover;
+
+
 }
 
 /* Holzverarbeitung */
@@ -298,3 +305,4 @@ section {
 .portfolio-item img:hover {
     transform: scale(1.5);           /* Optional: Vergrößert das Bild beim Hover */
 }
+
