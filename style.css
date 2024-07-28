@@ -1,0 +1,301 @@
+/* Grundlegende Stile für den Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header-Stile */
+header {  
+    padding: 10px 0;
+    text-align: center;
+    background-color:white;
+    font-family: 'Arrire-Garde';  
+}
+
+/* Teaser-Bild */
+.teaser {
+    max-width: 100%;
+    height: auto;
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: center; /* Bild horizontal zentrieren */
+    align-items: center; /* Bild vertikal zentrieren (falls erforderlich) */
+    width:1200px; /* Breite des Containers auf die gesamte Viewport-Breite setzen */
+    height: 10cm; /* Höhe des Containers auf 5 cm setzen */
+    overflow: hidden; /* Verhindert das Überlaufen des Bildes */
+}
+
+.teaser img {
+    width: 100%; /* Bild nimmt die volle Breite des Containers ein */
+    height: auto; /* Bildhöhe wird automatisch angepasst, um das Seitenverhältnis zu bewahren */
+    object-fit: cover; /* Bild wird so skaliert, dass es den Container ausfüllt, ohne das Seitenverhältnis zu verzerren */
+}
+
+
+ /* Gesamte Navigation */
+ .mitte {
+    display: flex;               /* Aktiviert Flexbox */
+    justify-content: center;     /* Zentriert die Links horizontal */
+    align-items: center;         /* Zentriert die Links vertikal */
+    background-color: #8b5e3c; /* Hintergrundfarbe der Navigation */
+    position: sticky;            /* Fixiert die Navigation beim Scrollen */
+    top: 0;                      /* Positioniert die Navigation oben */
+    z-index: 99;                 /* Z-Index für die Stapelreihenfolge */
+    padding: 10px 0;             /* Vertikaler Innenabstand der Navigation */
+    gap: 10px;                   /* Abstand zwischen den Links */
+    opacity: 0.95;               /* Das ist dafür, dass die Navigation jederzeit anklickbar ist */
+    gap: 5px;
+    font-size: 1rem;
+    
+}
+
+/* Links in der Navigation */
+.mitte a {
+    color: #fff;               /* Schriftfarbe der Links */
+    text-align: center;          /* Zentriert den Text innerhalb der Links */
+    padding: 10px 15px;          /* Innenabstand der Links */
+    text-decoration: none;       /* Entfernt die Unterstreichung der Links */
+    white-space: nowrap;         /* Verhindert, dass der Text in den Links umgebrochen wird */
+    font-size: 1rem;
+    font-weight: 500;            /* Schriftgewicht */             
+    
+}
+
+@media (max-width: 900px) {
+    .mitte a {
+        padding: 8px 12px;    /* Noch kleinerer Innenabstand für sehr kleine Bildschirme */
+        font-size: 0.9rem;
+    
+    }
+    .mitte {
+        gap: 5px;
+    }
+}
+
+.mitte a:hover {
+    background-color: #ad8363;
+    border-radius: 7;
+}
+
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+ul{ 
+    color: #8b5e3c;
+}
+
+li{
+color: #8b5e3c;
+}
+
+h1{
+text-align: center;
+color:#4e3420;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Überschriften */
+h2{
+    color:#4e3420 ;
+    text-align: left;
+    
+    
+}
+
+h3{
+    color: #8b5e3c;
+    text-align: left;
+}
+
+h4{
+    font-size: 8pt;
+    color: #fff;
+}
+
+/* Footer und Navigation Blur-Effekt */
+footer nav {
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+/* Absatz */
+p {
+    padding-left: 10px;
+    margin: 8pt 0; /* Reduziert den Abstand zwischen Absätzen auf 5px oben und unten */
+    color: #4e3420;
+}
+
+/* Section */
+section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-top: 29px;
+    font-size: 12pt;
+  
+    /* Überschrift nicht verdeckt */
+    padding-top: 48px;
+    transform: translateY(-48px);
+}
+
+/* Zentrierte Inhalte */
+.mitte {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* Holzverarbeitung */
+.Willkommen {
+    text-align: left;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+/*Bilder bei UeberUns*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 40px); /* Drei Bilder pro Reihe mit Abstand */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-caption {
+    font-size: 10pt;
+    margin-top: 5pt;
+}
+
+ /* Styling für den Container des Kontaktformulars */
+ .container {
+    max-width: 600px;            /* Maximale Breite des Containers */
+    margin: 0 auto;              /* Zentriert den Container */
+    background-color:#4e3420;   /* Hintergrundfarbe des Containers */
+    padding: 0.8cm;
+    border-radius: 10px;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+/* Balken beim Kontaktformular*/
+.balken {
+    width: 100%;                 /* Volle Breite des Containers */
+    height: 50px;                /* Höhe der Balken */
+    background-color: white;    /* Hintergrundfarbe der Balken */
+    margin-bottom: 10px;         /* Abstand zwischen den Balken */
+    border-radius: 5px;          /* Abgerundete Ecken */
+
+}
+.balken_3{
+    height: 50px;                /* Höhe der Balken */
+    background-color: white;    /* Hintergrundfarbe der Balken */
+    margin-bottom: 10px;         /* Abstand zwischen den Balken */
+    border-radius: 5px;          /* Abgerundete Ecken */
+    height: 5cm;
+}
+
+
+.flexbox-container {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.material {
+    flex: 1 1 calc(33.333% - 40px); /* Drei Bilder pro Reihe mit Abstand */
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+/*Material Bildergalerie*/
+.material img{
+    margin: 15px;
+   width: 4cm;
+   height: 4cm;
+   object-fit: cover;
+   
+}
+
+.material-caption{
+    font-size: 10pt; 
+    margin-top: 5px;                  /* Abstand über der Bildunterschrift */
+    margin-left: 10px;
+    color: #4e3420;
+    max-width: 4cm; /* Stellt sicher, dass die Beschriftung die gleiche Breite wie das Bild hat */
+
+}
+
+.material img:hover {
+    transform: scale(1.5);           /* Optional: Vergrößert das Bild beim Hover */
+}
+
+/* Container für das Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht das Umfließen der Bilder auf mehrere Zeilen */
+    gap: 2px; /* Sehr kleiner Abstand zwischen den Bildern */
+    padding: 0; /* Kein Innenabstand */
+    margin: 0; /* Kein äußerer Abstand */
+    box-sizing: border-box; /* Box-Modell einbeziehen */
+    width: 100%;
+    margin-top: 1cm;
+    
+}
+
+/* Einzelnes Portfolio-Element */
+.portfolio-item {
+    flex: 1 0 21%; /* Jedes Element nimmt etwa 21% der Breite des Containers ein */
+    box-sizing: border-box;
+}
+
+/* Bilder im Portfolio */
+.portfolio-item img {
+    width: 100%; /* Bild passt sich der Breite des Containers an */
+    height: 200px; /* Feste Höhe für alle Bilder */
+    object-fit: cover; /* Bild wird zugeschnitten, um den Container auszufüllen */
+    display: block; /* Entfernt möglichen Abstand unter dem Bild */
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.5);           /* Optional: Vergrößert das Bild beim Hover */
+}
