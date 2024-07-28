@@ -21,7 +21,6 @@ header {
     display: flex; /* Aktiviert Flexbox */
     justify-content: center; /* Bild horizontal zentrieren */
     align-items: center; /* Bild vertikal zentrieren (falls erforderlich) */
-    width:1200px; /* Breite des Containers auf die gesamte Viewport-Breite setzen */
     height: 10cm; /* Höhe des Containers auf 5 cm setzen */
     overflow: hidden; /* Verhindert das Überlaufen des Bildes */
 }
